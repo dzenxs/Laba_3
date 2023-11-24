@@ -67,7 +67,7 @@ namespace Task_1
             {
                 using (StreamWriter sw = new StreamWriter(fileNames, false))
                 {
-                    // Очищаємо вміст файлу, встановлюючи режим перезапису (false)
+
                 }
             }
 
@@ -112,45 +112,14 @@ namespace Task_1
                 throw new Exception("sum and amount is equal 0");
             }
         }
-        /*static int MutluplyWhithOverflow(int num1, int num2)
-        {
-            try
-            {
-                return checked(num1 * num2);
 
-            }
-            catch (OverflowException)
-            {
-                using (StreamWriter type = new StreamWriter("overflow.txt", true))
-                {
-                    type.WriteLine("type not 32 type");
-                }
-
-
-                throw new Int32OverflowException("The product of numbers goes beyong the int 32 type");
-            }
-        }*/
-     
         static void Main(string[] args)
         {
 
 
-            
-            // Здесь продолжайте выполнение вашего кода
-
             Console.WriteLine("average = " + Average());
             Console.ReadKey();
 
-
-            /*int[][] arr = new int[20][];
-
-            for (int i = 10; i < 30; i++)
-            {
-                arr[i - 10] = ReadDataTxt($"{i}.txt");
-                Console.WriteLine($"{arr[0][0]} {arr[0][1]}");
-
-
-            }*/
 
         }
     }
